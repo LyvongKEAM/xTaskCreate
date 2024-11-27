@@ -8,7 +8,7 @@ For ESP32 chips, FreeRTOS is integrated into the ESP-IDF framework, enabling tas
 In this project, we will use three sensor such as DHT11 (Digital Sensor), LDR (Aanalog sensor) and BMP180 (I2C communication) by seperate task in different rate.
 ![Reference Image](Picture/Hardware.png)
 
-##Result from terminal
+## Result from terminal
 
 After flashing the code, here's the result:
 ![Reference Image](Picture/Result.png)
