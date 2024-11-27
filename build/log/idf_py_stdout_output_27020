@@ -1,0 +1,1172 @@
+1�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov 27 2024 11:37:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c3d4h ( 50132) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c3fc vaddr=3fc93800 size=02af4h ( 10996) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001eef8 vaddr=40374000 size=01120h (  4384) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1cdc0h (118208) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=0003cde8 vaddr=40375120 size=0e68ch ( 59020) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     Tasks[0m
+[0;32mI (195) app_init: App version:      1[0m
+[0;32mI (199) app_init: Compile time:     Nov 27 2024 11:37:25[0m
+[0;32mI (205) app_init: ELF file SHA256:  d36dc065e...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (220) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (230) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FC96C10 len 00052B00 (330 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (249) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (263) spi_flash: detected chip: gd[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (283) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) LDR: light intensity: 3759[0m
+[0;32mI (326) BMP180 I2C Driver: I2C master driver has been installed.[0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (336) BMP180 I2C Driver: BMP180 sensor found at 0x77[0m
+[0;32mI (356) BMP180 I2C Driver: AC1: 7318, AC2: -1172, AC3: -14289, AC4: 34480, AC5: 25794, AC6: 19239[0m
+[0;32mI (356) BMP180 I2C Driver: B1: 6515, B2: 46, MB: -32768, MC: -11786, MD: 2336[0m
+[0;32mI (436) BMP180: Pressure 100989 Pa, Altitute 28.35 m, Temperature : 25.4 C[0m
+[0;32mI (826) DHT11: Temperature is -1 
+[0m
+[0;32mI (846) DHT11: Humidity is -1
+[0m
+[0;32mI (1326) LDR: light intensity: 44[0m
+[0;32mI (2326) LDR: light intensity: 38[0m
+[0;32mI (2846) DHT11: Temperature is -1 
+[0m
+[0;32mI (2866) DHT11: Humidity is -1
+[0m
+[0;32mI (3326) LDR: light intensity: 39[0m
+[0;32mI (3506) BMP180: Pressure 100984 Pa, Altitute 28.35 m, Temperature : 25.4 C[0m
+[0;32mI (4326) LDR: light intensity: 43[0m
+[0;32mI (4866) DHT11: Temperature is -1 
+[0m
+[0;32mI (4886) DHT11: Humidity is -1
+[0m
+[0;32mI (5326) LDR: light intensity: 41[0m
+[0;32mI (6326) LDR: light intensity: 39[0m
+[0;32mI (6576) BMP180: Pressure 100986 Pa, Altitute 27.68 m, Temperature : 25.4 C[0m
+[0;32mI (6886) DHT11: Temperature is -1 
+[0m
+[0;32mI (6906) DHT11: Humidity is -1
+[0m
+[0;32mI (7326) LDR: light intensity: 43[0m
+[0;32mI (8326) LDR: light intensity: 37[0m
+[0;32mI (8906) DHT11: Temperature is -1 
+[0m
+[0;32mI (8926) DHT11: Humidity is -1
+[0m
+[0;32mI (9326) LDR: light intensity: 37[0m
+[0;32mI (9646) BMP180: Pressure 100990 Pa, Altitute 27.34 m, Temperature : 25.4 C[0m
+[0;32mI (10326) LDR: light intensity: 41[0m
+[0;32mI (10926) DHT11: Temperature is -1 
+[0m
+[0;32mI (10946) DHT11: Humidity is -1
+[0m
+[0;32mI (11326) LDR: light intensity: 41[0m
+[0;32mI (12326) LDR: light intensity: 38[0m
+[0;32mI (12716) BMP180: Pressure 100997 Pa, Altitute 26.59 m, Temperature : 25.3 C[0m
+[0;32mI (12946) DHT11: Temperature is -1 
+[0m
+[0;32mI (12966) DHT11: Humidity is -1
+[0m
+[0;32mI (13326) LDR: light intensity: 44[0m
+[0;32mI (14326) LDR: light intensity: 39[0m
+[0;32mI (14966) DHT11: Temperature is -1 
+[0m
+[0;32mI (14986) DHT11: Humidity is -1
+[0m
+[0;32mI (15326) LDR: light intensity: 39[0m
+[0;32mI (15786) BMP180: Pressure 101004 Pa, Altitute 25.84 m, Temperature : 25.3 C[0m
+[0;32mI (16326) LDR: light intensity: 42[0m
+[0;32mI (16986) DHT11: Temperature is -1 
+[0m
+[0;32mI (17006) DHT11: Humidity is -1
+[0m
+[0;32mI (17326) LDR: light intensity: 40[0m
+[0;32mI (18326) LDR: light intensity: 38[0m
+[0;32mI (18856) BMP180: Pressure 100989 Pa, Altitute 27.68 m, Temperature : 25.3 C[0m
+[0;32mI (19006) DHT11: Temperature is -1 
+[0m
+[0;32mI (19026) DHT11: Humidity is -1
+[0m
+[0;32mI (19326) LDR: light intensity: 44[0m
+[0;32mI (20326) LDR: light intensity: 38[0m
+[0;32mI (21026) DHT11: Temperature is -1 
+[0m
+[0;32mI (21046) DHT11: Humidity is -1
+[0m
+[0;32mI (21326) LDR: light intensity: 37[0m
+[0;32mI (21926) BMP180: Pressure 101001 Pa, Altitute 27.59 m, Temperature : 25.4 C[0m
+[0;32mI (22326) LDR: light intensity: 43[0m
+[0;32mI (23046) DHT11: Temperature is -1 
+[0m
+[0;32mI (23066) DHT11: Humidity is -1
+[0m
+[0;32mI (23326) LDR: light intensity: 40[0m
+[0;32mI (24326) LDR: light intensity: 37[0m
+[0;32mI (24996) BMP180: Pressure 100992 Pa, Altitute 27.01 m, Temperature : 25.4 C[0m
+[0;32mI (25066) DHT11: Temperature is -1 
+[0m
+[0;32mI (25086) DHT11: Humidity is -1
+[0m
+[0;32mI (25326) LDR: light intensity: 43[0m
+[0;32mI (26326) LDR: light intensity: 39[0m
+[0;32mI (27086) DHT11: Temperature is -1 
+[0m
+[0;32mI (27106) DHT11: Humidity is -1
+[0m
+[0;32mI (27326) LDR: light intensity: 37[0m
+[0;32mI (28066) BMP180: Pressure 100986 Pa, Altitute 27.84 m, Temperature : 25.4 C[0m
+[0;32mI (28326) LDR: light intensity: 42[0m
+[0;32mI (29106) DHT11: Temperature is -1 
+[0m
+[0;32mI (29126) DHT11: Humidity is -1
+[0m
+[0;32mI (29326) LDR: light intensity: 39[0m
+[0;32mI (30326) LDR: light intensity: 37[0m
+[0;32mI (31126) DHT11: Temperature is -1 
+[0m
+[0;32mI (31146) DHT11: Humidity is -1
+[0m
+[0;32mI (31156) BMP180: Pressure 100989 Pa, Altitute 28.10 m, Temperature : 25.4 C[0m
+[0;32mI (31326) LDR: light intensity: 41[0m
+[0;32mI (32326) LDR: light intensity: 37[0m
+[0;32mI (33146) DHT11: Temperature is -1 
+[0m
+[0;32mI (33166) DHT11: Humidity is -1
+[0m
+[0;32mI (33326) LDR: light intensity: 37[0m
+[0;32mI (34226) BMP180: Pressure 100993 Pa, Altitute 27.34 m, Temperature : 25.3 C[0m
+[0;32mI (34326) LDR: light intensity: 41[0m
+[0;32mI (35166) DHT11: Temperature is -1 
+[0m
+[0;32mI (35186) DHT11: Humidity is -1
+[0m
+[0;32mI (35326) LDR: light intensity: 38[0m
+[0;32mI (36326) LDR: light intensity: 39[0m
+[0;32mI (37186) DHT11: Temperature is -1 
+[0m
+[0;32mI (37206) DHT11: Humidity is -1
+[0m
+[0;32mI (37296) BMP180: Pressure 100990 Pa, Altitute 27.76 m, Temperature : 25.4 C[0m
+[0;32mI (37326) LDR: light intensity: 41[0m
+[0;32mI (38326) LDR: light intensity: 37[0m
+[0;32mI (39206) DHT11: Temperature is -1 
+[0m
+[0;32mI (39226) DHT11: Humidity is -1
+[0m
+[0;32mI (39326) LDR: light intensity: 39[0m
+[0;32mI (40326) LDR: light intensity: 40[0m
+[0;32mI (40366) BMP180: Pressure 100985 Pa, Altitute 28.26 m, Temperature : 25.4 C[0m
+[0;32mI (41226) DHT11: Temperature is -1 
+[0m
+[0;32mI (41246) DHT11: Humidity is -1
+[0m
+[0;32mI (41326) LDR: light intensity: 41[0m
+[0;32mI (42326) LDR: light intensity: 37[0m
+[0;32mI (43246) DHT11: Temperature is -1 
+[0m
+[0;32mI (43266) DHT11: Humidity is -1
+[0m
+[0;32mI (43326) LDR: light intensity: 38[0m
+[0;32mI (43436) BMP180: Pressure 100985 Pa, Altitute 28.18 m, Temperature : 25.3 C[0m
+[0;32mI (44326) LDR: light intensity: 41[0m
+[0;32mI (45266) DHT11: Temperature is -1 
+[0m
+[0;32mI (45286) DHT11: Humidity is -1
+[0m
+[0;32mI (45326) LDR: light intensity: 37[0m
+[0;32mI (46326) LDR: light intensity: 37[0m
+[0;32mI (46506) BMP180: Pressure 100990 Pa, Altitute 28.51 m, Temperature : 25.2 C[0m
+[0;32mI (47286) DHT11: Temperature is -1 
+[0m
+[0;32mI (47306) DHT11: Humidity is -1
+[0m
+[0;32mI (47326) LDR: light intensity: 42[0m
+[0;32mI (48326) LDR: light intensity: 38[0m
+[0;32mI (49326) LDR: light intensity: 39[0m
+[0;32mI (49306) DHT11: Temperature is -1 
+[0m
+[0;32mI (49326) DHT11: Humidity is -1
+[0m
+[0;32mI (49576) BMP180: Pressure 100990 Pa, Altitute 27.93 m, Temperature : 25.3 C[0m
+[0;32mI (50326) LDR: light intensity: 42[0m
+[0;32mI (51326) LDR: light intensity: 38[0m
+[0;32mI (51326) DHT11: Temperature is -1 
+[0m
+[0;32mI (51346) DHT11: Humidity is -1
+[0m
+[0;32mI (52326) LDR: light intensity: 38[0m
+[0;32mI (52646) BMP180: Pressure 100984 Pa, Altitute 27.93 m, Temperature : 25.3 C[0m
+[0;32mI (53326) LDR: light intensity: 43[0m
+[0;32mI (53346) DHT11: Temperature is -1 
+[0m
+[0;32mI (53366) DHT11: Humidity is -1
+[0m
+[0;32mI (54326) LDR: light intensity: 39[0m
+[0;32mI (55326) LDR: light intensity: 37[0m
+[0;32mI (55366) DHT11: Temperature is -1 
+[0m
+[0;32mI (55386) DHT11: Humidity is -1
+[0m
+[0;32mI (55716) BMP180: Pressure 100987 Pa, Altitute 27.59 m, Temperature : 25.3 C[0m
+[0;32mI (56326) LDR: light intensity: 42[0m
+[0;32mI (57326) LDR: light intensity: 37[0m
+[0;32mI (57386) DHT11: Temperature is -1 
+[0m
+[0;32mI (57406) DHT11: Humidity is -1
+[0m
+[0;32mI (58326) LDR: light intensity: 38[0m
+[0;32mI (58786) BMP180: Pressure 100987 Pa, Altitute 27.34 m, Temperature : 25.3 C[0m
+[0;32mI (59326) LDR: light intensity: 41[0m
+[0;32mI (59406) DHT11: Temperature is -1 
+[0m
+[0;32mI (59426) DHT11: Humidity is -1
+[0m
+[0;32mI (60326) LDR: light intensity: 37[0m
+[0;32mI (61326) LDR: light intensity: 37[0m
+[0;32mI (61426) DHT11: Temperature is -1 
+[0m
+[0;32mI (61446) DHT11: Humidity is -1
+[0m
+[0;32mI (61856) BMP180: Pressure 100991 Pa, Altitute 27.68 m, Temperature : 25.3 C[0m
+[0;32mI (62326) LDR: light intensity: 41[0m
+[0;32mI (63326) LDR: light intensity: 37[0m
+[0;32mI (63446) DHT11: Temperature is -1 
+[0m
+[0;32mI (63466) DHT11: Humidity is -1
+[0m
+[0;32mI (64326) LDR: light intensity: 37[0m
+[0;32mI (64926) BMP180: Pressure 100995 Pa, Altitute 27.84 m, Temperature : 25.3 C[0m
+[0;32mI (65326) LDR: light intensity: 42[0m
+[0;32mI (65466) DHT11: Temperature is -1 
+[0m
+[0;32mI (65486) DHT11: Humidity is -1
+[0m
+[0;32mI (66326) LDR: light intensity: 37[0m
+[0;32mI (67326) LDR: light intensity: 35[0m
+[0;32mI (67486) DHT11: Temperature is -1 
+[0m
+[0;32mI (67506) DHT11: Humidity is -1
+[0m
+[0;32mI (67996) BMP180: Pressure 100991 Pa, Altitute 28.10 m, Temperature : 25.2 C[0m
+[0;32mI (68326) LDR: light intensity: 41[0m
+[0;32mI (69326) LDR: light intensity: 37[0m
+[0;32mI (69506) DHT11: Temperature is -1 
+[0m
+[0;32mI (69526) DHT11: Humidity is -1
+[0m
+[0;32mI (70326) LDR: light intensity: 37[0m
+[0;32mI (71066) BMP180: Pressure 100995 Pa, Altitute 28.01 m, Temperature : 25.2 C[0m
+[0;32mI (71326) LDR: light intensity: 42[0m
+[0;32mI (71526) DHT11: Temperature is -1 
+[0m
+[0;32mI (71546) DHT11: Humidity is -1
+[0m
+[0;32mI (72326) LDR: light intensity: 37[0m
+[0;32mI (73326) LDR: light intensity: 37[0m
+[0;32mI (73546) DHT11: Temperature is -1 
+[0m
+[0;32mI (73566) DHT11: Humidity is -1
+[0m
+[0;32mI (74136) BMP180: Pressure 100989 Pa, Altitute 27.68 m, Temperature : 25.3 C[0m
+[0;32mI (74326) LDR: light intensity: 44[0m
+[0;32mI (75326) LDR: light intensity: 37[0m
+[0;32mI (75566) DHT11: Temperature is -1 
+[0m
+[0;32mI (75586) DHT11: Humidity is -1
+[0m
+[0;32mI (76326) LDR: light intensity: 37[0m
+[0;32mI (77206) BMP180: Pressure 100987 Pa, Altitute 28.35 m, Temperature : 25.2 C[0m
+[0;32mI (77326) LDR: light intensity: 41[0m
+[0;32mI (77586) DHT11: Temperature is -1 
+[0m
+[0;32mI (77606) DHT11: Humidity is -1
+[0m
+[0;32mI (78326) LDR: light intensity: 37[0m
+[0;32mI (79326) LDR: light intensity: 35[0m
+[0;32mI (79606) DHT11: Temperature is -1 
+[0m
+[0;32mI (79626) DHT11: Humidity is -1
+[0m
+[0;32mI (80276) BMP180: Pressure 100985 Pa, Altitute 28.35 m, Temperature : 25.1 C[0m
+[0;32mI (80326) LDR: light intensity: 43[0m
+[0;32mI (81326) LDR: light intensity: 37[0m
+[0;32mI (81626) DHT11: Temperature is -1 
+[0m
+[0;32mI (81646) DHT11: Humidity is -1
+[0m
+[0;32mI (82326) LDR: light intensity: 37[0m
+[0;32mI (83326) LDR: light intensity: 39[0m
+[0;32mI (83346) BMP180: Pressure 100985 Pa, Altitute 28.43 m, Temperature : 25.1 C[0m
+[0;32mI (83646) DHT11: Temperature is -1 
+[0m
+[0;32mI (83666) DHT11: Humidity is -1
+[0m
+[0;32mI (84326) LDR: light intensity: 41[0m
+[0;32mI (85326) LDR: light intensity: 39[0m
+[0;32mI (85666) DHT11: Temperature is -1 
+[0m
+[0;32mI (85686) DHT11: Humidity is -1
+[0m
+[0;32mI (86326) LDR: light intensity: 37[0m
+[0;32mI (86416) BMP180: Pressure 100995 Pa, Altitute 28.01 m, Temperature : 25.1 C[0m
+[0;32mI (87326) LDR: light intensity: 41[0m
+[0;32mI (87686) DHT11: Temperature is -1 
+[0m
+[0;32mI (87706) DHT11: Humidity is -1
+[0m
+[0;32mI (88326) LDR: light intensity: 38[0m
+[0;32mI (89326) LDR: light intensity: 37[0m
+[0;32mI (89486) BMP180: Pressure 100991 Pa, Altitute 27.59 m, Temperature : 25.1 C[0m
+[0;32mI (89706) DHT11: Temperature is -1 
+[0m
+[0;32mI (89726) DHT11: Humidity is -1
+[0m
+[0;32mI (90326) LDR: light intensity: 40[0m
+[0;32mI (91326) LDR: light intensity: 36[0m
+[0;32mI (91726) DHT11: Temperature is -1 
+[0m
+[0;32mI (91746) DHT11: Humidity is -1
+[0m
+[0;32mI (92326) LDR: light intensity: 38[0m
+[0;32mI (92556) BMP180: Pressure 100990 Pa, Altitute 27.68 m, Temperature : 25.1 C[0m
+[0;32mI (93326) LDR: light intensity: 41[0m
+[0;32mI (93746) DHT11: Temperature is -1 
+[0m
+[0;32mI (93766) DHT11: Humidity is -1
+[0m
+[0;32mI (94326) LDR: light intensity: 39[0m
+[0;32mI (95326) LDR: light intensity: 39[0m
+[0;32mI (95626) BMP180: Pressure 100989 Pa, Altitute 28.01 m, Temperature : 25.1 C[0m
+[0;32mI (95766) DHT11: Temperature is -1 
+[0m
+[0;32mI (95786) DHT11: Humidity is -1
+[0m
+[0;32mI (96326) LDR: light intensity: 42[0m
+[0;32mI (97326) LDR: light intensity: 35[0m
+[0;32mI (97786) DHT11: Temperature is -1 
+[0m
+[0;32mI (97806) DHT11: Humidity is -1
+[0m
+[0;32mI (98326) LDR: light intensity: 37[0m
+[0;32mI (98696) BMP180: Pressure 100992 Pa, Altitute 27.09 m, Temperature : 25.1 C[0m
+[0;32mI (99326) LDR: light intensity: 41[0m
+[0;32mI (99806) DHT11: Temperature is -1 
+[0m
+[0;32mI (99826) DHT11: Humidity is -1
+[0m
+[0;32mI (100326) LDR: light intensity: 37[0m
+[0;32mI (101326) LDR: light intensity: 37[0m
+[0;32mI (101766) BMP180: Pressure 101004 Pa, Altitute 26.68 m, Temperature : 25.1 C[0m
+[0;32mI (101826) DHT11: Temperature is -1 
+[0m
+[0;32mI (101846) DHT11: Humidity is -1
+[0m
+[0;32mI (102326) LDR: light intensity: 43[0m
+[0;32mI (103326) LDR: light intensity: 37[0m
+[0;32mI (103846) DHT11: Temperature is -1 
+[0m
+[0;32mI (103866) DHT11: Humidity is -1
+[0m
+[0;32mI (104326) LDR: light intensity: 37[0m
+[0;32mI (104836) BMP180: Pressure 100988 Pa, Altitute 28.59 m, Temperature : 25.1 C[0m
+[0;32mI (105326) LDR: light intensity: 41[0m
+[0;32mI (105866) DHT11: Temperature is -1 
+[0m
+[0;32mI (105886) DHT11: Humidity is -1
+[0m
+[0;32mI (106326) LDR: light intensity: 37[0m
+[0;32mI (107326) LDR: light intensity: 36[0m
+[0;32mI (107886) DHT11: Temperature is -1 
+[0m
+[0;32mI (107906) DHT11: Humidity is -1
+[0m
+[0;32mI (107916) BMP180: Pressure 100983 Pa, Altitute 28.35 m, Temperature : 25.1 C[0m
+[0;32mI (108326) LDR: light intensity: 43[0m
+[0;32mI (109326) LDR: light intensity: 38[0m
+[0;32mI (109906) DHT11: Temperature is -1 
+[0m
+[0;32mI (109926) DHT11: Humidity is -1
+[0m
+[0;32mI (110326) LDR: light intensity: 40[0m
+[0;32mI (110986) BMP180: Pressure 100975 Pa, Altitute 29.18 m, Temperature : 25.1 C[0m
+[0;32mI (111326) LDR: light intensity: 42[0m
+[0;32mI (111926) DHT11: Temperature is -1 
+[0m
+[0;32mI (111946) DHT11: Humidity is -1
+[0m
+[0;32mI (112326) LDR: light intensity: 39[0m
+[0;32mI (113326) LDR: light intensity: 37[0m
+[0;32mI (113946) DHT11: Temperature is -1 
+[0m
+[0;32mI (113966) DHT11: Humidity is -1
+[0m
+[0;32mI (114056) BMP180: Pressure 100979 Pa, Altitute 28.76 m, Temperature : 25.1 C[0m
+[0;32mI (114326) LDR: light intensity: 41[0m
+[0;32mI (115326) LDR: light intensity: 34[0m
+[0;32mI (115966) DHT11: Temperature is -1 
+[0m
+[0;32mI (115986) DHT11: Humidity is -1
+[0m
+[0;32mI (116326) LDR: light intensity: 37[0m
+[0;32mI (117126) BMP180: Pressure 100980 Pa, Altitute 28.51 m, Temperature : 25.0 C[0m
+[0;32mI (117326) LDR: light intensity: 41[0m
+[0;32mI (117986) DHT11: Temperature is -1 
+[0m
+[0;32mI (118006) DHT11: Humidity is -1
+[0m
+[0;32mI (118326) LDR: light intensity: 37[0m
+[0;32mI (119326) LDR: light intensity: 35[0m
+[0;32mI (120006) DHT11: Temperature is -1 
+[0m
+[0;32mI (120026) DHT11: Humidity is -1
+[0m
+[0;32mI (120196) BMP180: Pressure 100980 Pa, Altitute 29.26 m, Temperature : 24.9 C[0m
+[0;32mI (120326) LDR: light intensity: 40[0m
+[0;32mI (121326) LDR: light intensity: 37[0m
+[0;32mI (122026) DHT11: Temperature is -1 
+[0m
+[0;32mI (122046) DHT11: Humidity is -1
+[0m
+[0;32mI (122326) LDR: light intensity: 31[0m
+[0;32mI (123266) BMP180: Pressure 100991 Pa, Altitute 27.84 m, Temperature : 24.9 C[0m
+[0;32mI (123326) LDR: light intensity: 41[0m
+[0;32mI (124046) DHT11: Temperature is -1 
+[0m
+[0;32mI (124066) DHT11: Humidity is -1
+[0m
+[0;32mI (124326) LDR: light intensity: 37[0m
+[0;32mI (125326) LDR: light intensity: 36[0m
+[0;32mI (126066) DHT11: Temperature is -1 
+[0m
+[0;32mI (126086) DHT11: Humidity is -1
+[0m
+[0;32mI (126326) LDR: light intensity: 37[0m
+[0;32mI (126336) BMP180: Pressure 100986 Pa, Altitute 28.26 m, Temperature : 24.9 C[0m
+[0;32mI (127326) LDR: light intensity: 39[0m
+[0;32mI (128086) DHT11: Temperature is -1 
+[0m
+[0;32mI (128106) DHT11: Humidity is -1
+[0m
+[0;32mI (128326) LDR: light intensity: 39[0m
+[0;32mI (129326) LDR: light intensity: 37[0m
+[0;32mI (129406) BMP180: Pressure 100988 Pa, Altitute 28.43 m, Temperature : 24.9 C[0m
+[0;32mI (130106) DHT11: Temperature is -1 
+[0m
+[0;32mI (130126) DHT11: Humidity is -1
+[0m
+[0;32mI (130326) LDR: light intensity: 37[0m
+[0;32mI (131326) LDR: light intensity: 37[0m
+[0;32mI (132126) DHT11: Temperature is -1 
+[0m
+[0;32mI (132146) DHT11: Humidity is -1
+[0m
+[0;32mI (132326) LDR: light intensity: 36[0m
+[0;32mI (132476) BMP180: Pressure 100974 Pa, Altitute 28.43 m, Temperature : 24.9 C[0m
+[0;32mI (133326) LDR: light intensity: 37[0m
+[0;32mI (134146) DHT11: Temperature is -1 
+[0m
+[0;32mI (134166) DHT11: Humidity is -1
+[0m
+[0;32mI (134326) LDR: light intensity: 37[0m
+[0;32mI (135326) LDR: light intensity: 38[0m
+[0;32mI (135546) BMP180: Pressure 100981 Pa, Altitute 28.59 m, Temperature : 24.8 C[0m
+[0;32mI (136166) DHT11: Temperature is -1 
+[0m
+[0;32mI (136186) DHT11: Humidity is -1
+[0m
+[0;32mI (136326) LDR: light intensity: 41[0m
+[0;32mI (137326) LDR: light intensity: 38[0m
+[0;32mI (138186) DHT11: Temperature is -1 
+[0m
+[0;32mI (138206) DHT11: Humidity is -1
+[0m
+[0;32mI (138326) LDR: light intensity: 35[0m
+[0;32mI (138616) BMP180: Pressure 100979 Pa, Altitute 28.68 m, Temperature : 24.9 C[0m
+[0;32mI (139326) LDR: light intensity: 43[0m
+[0;32mI (140206) DHT11: Temperature is -1 
+[0m
+[0;32mI (140226) DHT11: Humidity is -1
+[0m
+[0;32mI (140326) LDR: light intensity: 36[0m
+[0;32mI (141326) LDR: light intensity: 36[0m
+[0;32mI (141686) BMP180: Pressure 100983 Pa, Altitute 28.35 m, Temperature : 25.0 C[0m
+[0;32mI (142226) DHT11: Temperature is -1 
+[0m
+[0;32mI (142246) DHT11: Humidity is -1
+[0m
+[0;32mI (142326) LDR: light intensity: 43[0m
+[0;32mI (143326) LDR: light intensity: 37[0m
+[0;32mI (144246) DHT11: Temperature is -1 
+[0m
+[0;32mI (144266) DHT11: Humidity is -1
+[0m
+[0;32mI (144326) LDR: light intensity: 36[0m
+[0;32mI (144756) BMP180: Pressure 100985 Pa, Altitute 28.68 m, Temperature : 25.0 C[0m
+[0;32mI (145326) LDR: light intensity: 40[0m
+[0;32mI (146266) DHT11: Temperature is -1 
+[0m
+[0;32mI (146286) DHT11: Humidity is -1
+[0m
+[0;32mI (146326) LDR: light intensity: 37[0m
+[0;32mI (147326) LDR: light intensity: 35[0m
+[0;32mI (147826) BMP180: Pressure 100983 Pa, Altitute 28.26 m, Temperature : 25.0 C[0m
+[0;32mI (148286) DHT11: Temperature is -1 
+[0m
+[0;32mI (148306) DHT11: Humidity is -1
+[0m
+[0;32mI (148326) LDR: light intensity: 39[0m
+[0;32mI (149326) LDR: light intensity: 37[0m
+[0;32mI (150326) LDR: light intensity: 35[0m
+[0;32mI (150306) DHT11: Temperature is -1 
+[0m
+[0;32mI (150326) DHT11: Humidity is -1
+[0m
+[0;32mI (150896) BMP180: Pressure 100989 Pa, Altitute 28.01 m, Temperature : 25.0 C[0m
+[0;32mI (151326) LDR: light intensity: 41[0m
+[0;32mI (152326) LDR: light intensity: 37[0m
+[0;32mI (152326) DHT11: Temperature is -1 
+[0m
+[0;32mI (152346) DHT11: Humidity is -1
+[0m
+[0;32mI (153326) LDR: light intensity: 37[0m
+[0;32mI (153966) BMP180: Pressure 100986 Pa, Altitute 27.93 m, Temperature : 25.0 C[0m
+[0;32mI (154326) LDR: light intensity: 39[0m
+[0;32mI (154346) DHT11: Temperature is -1 
+[0m
+[0;32mI (154366) DHT11: Humidity is -1
+[0m
+[0;32mI (155326) LDR: light intensity: 39[0m
+[0;32mI (156326) LDR: light intensity: 35[0m
+[0;32mI (156366) DHT11: Temperature is -1 
+[0m
+[0;32mI (156386) DHT11: Humidity is -1
+[0m
+[0;32mI (157036) BMP180: Pressure 100990 Pa, Altitute 28.35 m, Temperature : 25.1 C[0m
+[0;32mI (157326) LDR: light intensity: 43[0m
+[0;32mI (158326) LDR: light intensity: 37[0m
+[0;32mI (158386) DHT11: Temperature is -1 
+[0m
+[0;32mI (158406) DHT11: Humidity is -1
+[0m
+[0;32mI (159326) LDR: light intensity: 35[0m
+[0;32mI (160106) BMP180: Pressure 100984 Pa, Altitute 28.51 m, Temperature : 25.1 C[0m
+[0;32mI (160326) LDR: light intensity: 42[0m
+[0;32mI (160406) DHT11: Temperature is -1 
+[0m
+[0;32mI (160426) DHT11: Humidity is -1
+[0m
+[0;32mI (161326) LDR: light intensity: 37[0m
+[0;32mI (162326) LDR: light intensity: 37[0m
+[0;32mI (162426) DHT11: Temperature is -1 
+[0m
+[0;32mI (162446) DHT11: Humidity is -1
+[0m
+[0;32mI (163176) BMP180: Pressure 100996 Pa, Altitute 27.59 m, Temperature : 25.1 C[0m
+[0;32mI (163326) LDR: light intensity: 42[0m
+[0;32mI (164326) LDR: light intensity: 39[0m
+[0;32mI (164446) DHT11: Temperature is -1 
+[0m
+[0;32mI (164466) DHT11: Humidity is -1
+[0m
+[0;32mI (165326) LDR: light intensity: 35[0m
+[0;32mI (166246) BMP180: Pressure 100997 Pa, Altitute 27.51 m, Temperature : 25.1 C[0m
+[0;32mI (166326) LDR: light intensity: 43[0m
+[0;32mI (166466) DHT11: Temperature is -1 
+[0m
+[0;32mI (166486) DHT11: Humidity is -1
+[0m
+[0;32mI (167326) LDR: light intensity: 36[0m
+[0;32mI (168326) LDR: light intensity: 37[0m
+[0;32mI (168486) DHT11: Temperature is -1 
+[0m
+[0;32mI (168506) DHT11: Humidity is -1
+[0m
+[0;32mI (169316) BMP180: Pressure 100995 Pa, Altitute 27.43 m, Temperature : 25.1 C[0m
+[0;32mI (169326) LDR: light intensity: 42[0m
+[0;32mI (170326) LDR: light intensity: 35[0m
+[0;32mI (170506) DHT11: Temperature is -1 
+[0m
+[0;32mI (170526) DHT11: Humidity is -1
+[0m
+[0;32mI (171326) LDR: light intensity: 37[0m
+[0;32mI (172326) LDR: light intensity: 39[0m
+[0;32mI (172386) BMP180: Pressure 100995 Pa, Altitute 27.76 m, Temperature : 25.0 C[0m
+[0;32mI (172526) DHT11: Temperature is -1 
+[0m
+[0;32mI (172546) DHT11: Humidity is -1
+[0m
+[0;32mI (173326) LDR: light intensity: 43[0m
+[0;32mI (174326) LDR: light intensity: 37[0m
+[0;32mI (174546) DHT11: Temperature is -1 
+[0m
+[0;32mI (174566) DHT11: Humidity is -1
+[0m
+[0;32mI (175326) LDR: light intensity: 36[0m
+[0;32mI (175456) BMP180: Pressure 100988 Pa, Altitute 28.18 m, Temperature : 25.0 C[0m
+[0;32mI (176326) LDR: light intensity: 41[0m
+[0;32mI (176566) DHT11: Temperature is -1 
+[0m
+[0;32mI (176586) DHT11: Humidity is -1
+[0m
+[0;32mI (177326) LDR: light intensity: 38[0m
+[0;32mI (178326) LDR: light intensity: 38[0m
+[0;32mI (178526) BMP180: Pressure 100983 Pa, Altitute 27.68 m, Temperature : 25.0 C[0m
+[0;32mI (178586) DHT11: Temperature is -1 
+[0m
+[0;32mI (178606) DHT11: Humidity is -1
+[0m
+[0;32mI (179326) LDR: light intensity: 43[0m
+[0;32mI (180326) LDR: light intensity: 37[0m
+[0;32mI (180606) DHT11: Temperature is -1 
+[0m
+[0;32mI (180626) DHT11: Humidity is -1
+[0m
+[0;32mI (181326) LDR: light intensity: 37[0m
+[0;32mI (181596) BMP180: Pressure 100986 Pa, Altitute 27.93 m, Temperature : 25.0 C[0m
+[0;32mI (182326) LDR: light intensity: 43[0m
+[0;32mI (182626) DHT11: Temperature is -1 
+[0m
+[0;32mI (182646) DHT11: Humidity is -1
+[0m
+[0;32mI (183326) LDR: light intensity: 38[0m
+[0;32mI (184326) LDR: light intensity: 35[0m
+[0;32mI (184646) DHT11: Temperature is -1 
+[0m
+[0;32mI (184666) DHT11: Humidity is -1
+[0m
+[0;32mI (184676) BMP180: Pressure 100985 Pa, Altitute 27.76 m, Temperature : 25.0 C[0m
+[0;32mI (185326) LDR: light intensity: 41[0m
+[0;32mI (186326) LDR: light intensity: 37[0m
+[0;32mI (186666) DHT11: Temperature is -1 
+[0m
+[0;32mI (186686) DHT11: Humidity is -1
+[0m
+[0;32mI (187326) LDR: light intensity: 37[0m
+[0;32mI (187746) BMP180: Pressure 100985 Pa, Altitute 28.43 m, Temperature : 25.0 C[0m
+[0;32mI (188326) LDR: light intensity: 43[0m
+[0;32mI (188686) DHT11: Temperature is -1 
+[0m
+[0;32mI (188706) DHT11: Humidity is -1
+[0m
+[0;32mI (189326) LDR: light intensity: 37[0m
+[0;32mI (190326) LDR: light intensity: 33[0m
+[0;32mI (190706) DHT11: Temperature is -1 
+[0m
+[0;32mI (190726) DHT11: Humidity is -1
+[0m
+[0;32mI (190816) BMP180: Pressure 100981 Pa, Altitute 27.93 m, Temperature : 25.0 C[0m
+[0;32mI (191326) LDR: light intensity: 42[0m
+[0;32mI (192326) LDR: light intensity: 37[0m
+[0;32mI (192726) DHT11: Temperature is -1 
+[0m
+[0;32mI (192746) DHT11: Humidity is -1
+[0m
+[0;32mI (193326) LDR: light intensity: 37[0m
+[0;32mI (193886) BMP180: Pressure 100981 Pa, Altitute 28.35 m, Temperature : 25.0 C[0m
+[0;32mI (194326) LDR: light intensity: 43[0m
+[0;32mI (194746) DHT11: Temperature is -1 
+[0m
+[0;32mI (194766) DHT11: Humidity is -1
+[0m
+[0;32mI (195326) LDR: light intensity: 38[0m
+[0;32mI (196326) LDR: light intensity: 36[0m
+[0;32mI (196766) DHT11: Temperature is -1 
+[0m
+[0;32mI (196786) DHT11: Humidity is -1
+[0m
+[0;32mI (196956) BMP180: Pressure 100975 Pa, Altitute 28.59 m, Temperature : 25.0 C[0m
+[0;32mI (197326) LDR: light intensity: 43[0m
+[0;32mI (198326) LDR: light intensity: 37[0m
+[0;32mI (198786) DHT11: Temperature is -1 
+[0m
+[0;32mI (198806) DHT11: Humidity is -1
+[0m
+[0;32mI (199326) LDR: light intensity: 37[0m
+[0;32mI (200026) BMP180: Pressure 100981 Pa, Altitute 28.93 m, Temperature : 25.0 C[0m
+[0;32mI (200326) LDR: light intensity: 41[0m
+[0;32mI (200806) DHT11: Temperature is -1 
+[0m
+[0;32mI (200826) DHT11: Humidity is -1
+[0m
+[0;32mI (201326) LDR: light intensity: 37[0m
+[0;32mI (202326) LDR: light intensity: 35[0m
+[0;32mI (202826) DHT11: Temperature is -1 
+[0m
+[0;32mI (202846) DHT11: Humidity is -1
+[0m
+[0;32mI (203096) BMP180: Pressure 100981 Pa, Altitute 29.26 m, Temperature : 25.0 C[0m
+[0;32mI (203326) LDR: light intensity: 39[0m
+[0;32mI (204326) LDR: light intensity: 37[0m
+[0;32mI (204846) DHT11: Temperature is -1 
+[0m
+[0;32mI (204866) DHT11: Humidity is -1
+[0m
+[0;32mI (205326) LDR: light intensity: 38[0m
+[0;32mI (206166) BMP180: Pressure 100979 Pa, Altitute 28.85 m, Temperature : 25.0 C[0m
+[0;32mI (206326) LDR: light intensity: 40[0m
+[0;32mI (206866) DHT11: Temperature is -1 
+[0m
+[0;32mI (206886) DHT11: Humidity is -1
+[0m
+[0;32mI (207326) LDR: light intensity: 37[0m
+[0;32mI (208326) LDR: light intensity: 37[0m
+[0;32mI (208886) DHT11: Temperature is -1 
+[0m
+[0;32mI (208906) DHT11: Humidity is -1
+[0m
+[0;32mI (209236) BMP180: Pressure 100983 Pa, Altitute 28.51 m, Temperature : 25.0 C[0m
+[0;32mI (209326) LDR: light intensity: 40[0m
+[0;32mI (210326) LDR: light intensity: 34[0m
+[0;32mI (210906) DHT11: Temperature is -1 
+[0m
+[0;32mI (210926) DHT11: Humidity is -1
+[0m
+[0;32mI (211326) LDR: light intensity: 37[0m
+[0;32mI (212306) BMP180: Pressure 100975 Pa, Altitute 28.59 m, Temperature : 25.0 C[0m
+[0;32mI (212326) LDR: light intensity: 41[0m
+[0;32mI (212926) DHT11: Temperature is -1 
+[0m
+[0;32mI (212946) DHT11: Humidity is -1
+[0m
+[0;32mI (213326) LDR: light intensity: 38[0m
+[0;32mI (214326) LDR: light intensity: 36[0m
+[0;32mI (214946) DHT11: Temperature is -1 
+[0m
+[0;32mI (214966) DHT11: Humidity is -1
+[0m
+[0;32mI (215326) LDR: light intensity: 36[0m
+[0;32mI (215376) BMP180: Pressure 100982 Pa, Altitute 29.10 m, Temperature : 25.0 C[0m
+[0;32mI (216326) LDR: light intensity: 41[0m
+[0;32mI (216966) DHT11: Temperature is -1 
+[0m
+[0;32mI (216986) DHT11: Humidity is -1
+[0m
+[0;32mI (217326) LDR: light intensity: 39[0m
+[0;32mI (218326) LDR: light intensity: 31[0m
+[0;32mI (218446) BMP180: Pressure 100981 Pa, Altitute 29.01 m, Temperature : 25.0 C[0m
+[0;32mI (218986) DHT11: Temperature is -1 
+[0m
+[0;32mI (219006) DHT11: Humidity is -1
+[0m
+[0;32mI (219326) LDR: light intensity: 41[0m
+[0;32mI (220326) LDR: light intensity: 1166[0m
+[0;32mI (221006) DHT11: Temperature is -1 
+[0m
+[0;32mI (221026) DHT11: Humidity is -1
+[0m
+[0;32mI (221326) LDR: light intensity: 1065[0m
+[0;32mI (221516) BMP180: Pressure 100983 Pa, Altitute 28.59 m, Temperature : 25.0 C[0m
+[0;32mI (222326) LDR: light intensity: 1063[0m
+[0;32mI (223026) DHT11: Temperature is 25 
+[0m
+[0;32mI (223046) DHT11: Humidity is 5
+[0m
+[0;32mI (223326) LDR: light intensity: 1036[0m
+[0;32mI (224326) LDR: light intensity: 1224[0m
+[0;32mI (224586) BMP180: Pressure 100975 Pa, Altitute 28.93 m, Temperature : 25.0 C[0m
+[0;32mI (225046) DHT11: Temperature is 25 
+[0m
+[0;32mI (225066) DHT11: Humidity is 5
+[0m
+[0;32mI (225326) LDR: light intensity: 1221[0m
+[0;32mI (226326) LDR: light intensity: 1151[0m
+[0;32mI (227066) DHT11: Temperature is 25 
+[0m
+[0;32mI (227086) DHT11: Humidity is 5
+[0m
+[0;32mI (227326) LDR: light intensity: 1079[0m
+[0;32mI (227656) BMP180: Pressure 100976 Pa, Altitute 28.85 m, Temperature : 25.0 C[0m
+[0;32mI (228326) LDR: light intensity: 1021[0m
+[0;32mI (229086) DHT11: Temperature is 25 
+[0m
+[0;32mI (229106) DHT11: Humidity is 5
+[0m
+[0;32mI (229326) LDR: light intensity: 948[0m
+[0;32mI (230326) LDR: light intensity: 954[0m
+[0;32mI (230726) BMP180: Pressure 100985 Pa, Altitute 28.43 m, Temperature : 25.0 C[0m
+[0;32mI (231106) DHT11: Temperature is 25 
+[0m
+[0;32mI (231126) DHT11: Humidity is 5
+[0m
+[0;32mI (231326) LDR: light intensity: 965[0m
+[0;32mI (232326) LDR: light intensity: 940[0m
+[0;32mI (233126) DHT11: Temperature is 25 
+[0m
+[0;32mI (233146) DHT11: Humidity is 5
+[0m
+[0;32mI (233326) LDR: light intensity: 907[0m
+[0;32mI (233796) BMP180: Pressure 100992 Pa, Altitute 28.10 m, Temperature : 25.1 C[0m
+[0;32mI (234326) LDR: light intensity: 894[0m
+[0;32mI (235146) DHT11: Temperature is 25 
+[0m
+[0;32mI (235166) DHT11: Humidity is 5
+[0m
+[0;32mI (235326) LDR: light intensity: 887[0m
+[0;32mI (236326) LDR: light intensity: 879[0m
+[0;32mI (236866) BMP180: Pressure 100997 Pa, Altitute 27.84 m, Temperature : 25.1 C[0m
+[0;32mI (237166) DHT11: Temperature is 25 
+[0m
+[0;32mI (237186) DHT11: Humidity is 5
+[0m
+[0;32mI (237326) LDR: light intensity: 883[0m
+[0;32mI (238326) LDR: light intensity: 1002[0m
+[0;32mI (239186) DHT11: Temperature is 25 
+[0m
+[0;32mI (239206) DHT11: Humidity is 5
+[0m
+[0;32mI (239326) LDR: light intensity: 989[0m
+[0;32mI (239936) BMP180: Pressure 100983 Pa, Altitute 27.93 m, Temperature : 25.1 C[0m
+[0;32mI (240326) LDR: light intensity: 980[0m
+[0;32mI (241206) DHT11: Temperature is 25 
+[0m
+[0;32mI (241226) DHT11: Humidity is 5
+[0m
+[0;32mI (241326) LDR: light intensity: 931[0m
+[0;32mI (242326) LDR: light intensity: 931[0m
+[0;32mI (243006) BMP180: Pressure 100989 Pa, Altitute 27.68 m, Temperature : 25.1 C[0m
+[0;32mI (243226) DHT11: Temperature is 25 
+[0m
+[0;32mI (243246) DHT11: Humidity is 5
+[0m
+[0;32mI (243326) LDR: light intensity: 867[0m
+[0;32mI (244326) LDR: light intensity: 871[0m
+[0;32mI (245246) DHT11: Temperature is 25 
+[0m
+[0;32mI (245266) DHT11: Humidity is 5
+[0m
+[0;32mI (245326) LDR: light intensity: 860[0m
+[0;32mI (246076) BMP180: Pressure 100988 Pa, Altitute 27.68 m, Temperature : 25.1 C[0m
+[0;32mI (246326) LDR: light intensity: 861[0m
+[0;32mI (247266) DHT11: Temperature is 25 
+[0m
+[0;32mI (247286) DHT11: Humidity is 5
+[0m
+[0;32mI (247326) LDR: light intensity: 855[0m
+[0;32mI (248326) LDR: light intensity: 861[0m
+[0;32mI (249146) BMP180: Pressure 100984 Pa, Altitute 27.93 m, Temperature : 25.2 C[0m
+[0;32mI (249286) DHT11: Temperature is 25 
+[0m
+[0;32mI (249306) DHT11: Humidity is 5
+[0m
+[0;32mI (249326) LDR: light intensity: 852[0m
+[0;32mI (250326) LDR: light intensity: 855[0m
+[0;32mI (251326) LDR: light intensity: 857[0m
+[0;32mI (251306) DHT11: Temperature is 25 
+[0m
+[0;32mI (251326) DHT11: Humidity is 5
+[0m
+[0;32mI (252216) BMP180: Pressure 100980 Pa, Altitute 28.18 m, Temperature : 25.1 C[0m
+[0;32mI (252326) LDR: light intensity: 872[0m
+[0;32mI (253326) LDR: light intensity: 871[0m
+[0;32mI (253326) DHT11: Temperature is 25 
+[0m
+[0;32mI (253346) DHT11: Humidity is 5
+[0m
+[0;32mI (254326) LDR: light intensity: 879[0m
+[0;32mI (255286) BMP180: Pressure 100981 Pa, Altitute 28.76 m, Temperature : 25.1 C[0m
+[0;32mI (255326) LDR: light intensity: 887[0m
+[0;32mI (255346) DHT11: Temperature is 25 
+[0m
+[0;32mI (255366) DHT11: Humidity is 5
+[0m
+[0;32mI (256326) LDR: light intensity: 893[0m
+[0;32mI (257326) LDR: light intensity: 915[0m
+[0;32mI (257366) DHT11: Temperature is 25 
+[0m
+[0;32mI (257386) DHT11: Humidity is 5
+[0m
+[0;32mI (258326) LDR: light intensity: 919[0m
+[0;32mI (258356) BMP180: Pressure 100972 Pa, Altitute 29.10 m, Temperature : 25.1 C[0m
+[0;32mI (259326) LDR: light intensity: 906[0m
+[0;32mI (259386) DHT11: Temperature is 25 
+[0m
+[0;32mI (259406) DHT11: Humidity is 5
+[0m
+[0;32mI (260326) LDR: light intensity: 904[0m
+[0;32mI (261326) LDR: light intensity: 905[0m
+[0;32mI (261406) DHT11: Temperature is 25 
+[0m
+[0;32mI (261426) DHT11: Humidity is 5
+[0m
+[0;32mI (261436) BMP180: Pressure 100981 Pa, Altitute 29.01 m, Temperature : 25.1 C[0m
+[0;32mI (262326) LDR: light intensity: 893[0m
+[0;32mI (263326) LDR: light intensity: 889[0m
+[0;32mI (263426) DHT11: Temperature is 25 
+[0m
+[0;32mI (263446) DHT11: Humidity is 5
+[0m
+[0;32mI (264326) LDR: light intensity: 907[0m
+[0;32mI (264506) BMP180: Pressure 100986 Pa, Altitute 28.85 m, Temperature : 25.1 C[0m
+[0;32mI (265326) LDR: light intensity: 911[0m
+[0;32mI (265446) DHT11: Temperature is 25 
+[0m
+[0;32mI (265466) DHT11: Humidity is 5
+[0m
+[0;32mI (266326) LDR: light intensity: 938[0m
+[0;32mI (267326) LDR: light intensity: 959[0m
+[0;32mI (267466) DHT11: Temperature is 25 
+[0m
+[0;32mI (267486) DHT11: Humidity is 5
+[0m
+[0;32mI (267576) BMP180: Pressure 100985 Pa, Altitute 28.43 m, Temperature : 25.2 C[0m
+[0;32mI (268326) LDR: light intensity: 969[0m
+[0;32mI (269326) LDR: light intensity: 975[0m
+[0;32mI (269486) DHT11: Temperature is 25 
+[0m
+[0;32mI (269506) DHT11: Humidity is 5
+[0m
+[0;32mI (270326) LDR: light intensity: 995[0m
+[0;32mI (270646) BMP180: Pressure 100976 Pa, Altitute 28.93 m, Temperature : 25.2 C[0m
+[0;32mI (271326) LDR: light intensity: 991[0m
+[0;32mI (271506) DHT11: Temperature is 25 
+[0m
+[0;32mI (271526) DHT11: Humidity is 5
+[0m
+[0;32mI (272326) LDR: light intensity: 987[0m
+[0;32mI (273326) LDR: light intensity: 995[0m
+[0;32mI (273526) DHT11: Temperature is 25 
+[0m
+[0;32mI (273546) DHT11: Humidity is 5
+[0m
+[0;32mI (273716) BMP180: Pressure 100984 Pa, Altitute 28.43 m, Temperature : 25.2 C[0m
+[0;32mI (274326) LDR: light intensity: 989[0m
+[0;32mI (275326) LDR: light intensity: 995[0m
+[0;32mI (275546) DHT11: Temperature is 26 
+[0m
+[0;32mI (275566) DHT11: Humidity is 6
+[0m
+[0;32mI (276326) LDR: light intensity: 975[0m
+[0;32mI (276786) BMP180: Pressure 100982 Pa, Altitute 28.85 m, Temperature : 25.2 C[0m
+[0;32mI (277326) LDR: light intensity: 968[0m
+[0;32mI (277566) DHT11: Temperature is 26 
+[0m
+[0;32mI (277586) DHT11: Humidity is 6
+[0m
+[0;32mI (278326) LDR: light intensity: 967[0m
+[0;32mI (279326) LDR: light intensity: 973[0m
+[0;32mI (279586) DHT11: Temperature is 26 
+[0m
+[0;32mI (279606) DHT11: Humidity is 6
+[0m
+[0;32mI (279856) BMP180: Pressure 100969 Pa, Altitute 29.10 m, Temperature : 25.2 C[0m
+[0;32mI (280326) LDR: light intensity: 981[0m
+[0;32mI (281326) LDR: light intensity: 991[0m
+[0;32mI (281606) DHT11: Temperature is 26 
+[0m
+[0;32mI (281626) DHT11: Humidity is 6
+[0m
+[0;32mI (282326) LDR: light intensity: 1623[0m
+[0;32mI (282926) BMP180: Pressure 100972 Pa, Altitute 29.35 m, Temperature : 25.2 C[0m
+[0;32mI (283326) LDR: light intensity: 1711[0m
+[0;32mI (283626) DHT11: Temperature is 26 
+[0m
+[0;32mI (283646) DHT11: Humidity is 6
+[0m
+[0;32mI (284326) LDR: light intensity: 1721[0m
+[0;32mI (285326) LDR: light intensity: 1695[0m
+[0;32mI (285646) DHT11: Temperature is 26 
+[0m
+[0;32mI (285666) DHT11: Humidity is 6
+[0m
+[0;32mI (285996) BMP180: Pressure 100972 Pa, Altitute 29.18 m, Temperature : 25.2 C[0m
+[0;32mI (286326) LDR: light intensity: 1685[0m
+[0;32mI (287326) LDR: light intensity: 1675[0m
+[0;32mI (287666) DHT11: Temperature is 26 
+[0m
+[0;32mI (287686) DHT11: Humidity is 6
+[0m
+[0;32mI (288326) LDR: light intensity: 1661[0m
+[0;32mI (289066) BMP180: Pressure 100976 Pa, Altitute 29.35 m, Temperature : 25.3 C[0m
+[0;32mI (289326) LDR: light intensity: 1659[0m
+[0;32mI (289686) DHT11: Temperature is 26 
+[0m
+[0;32mI (289706) DHT11: Humidity is 6
+[0m
+[0;32mI (290326) LDR: light intensity: 1655[0m
+[0;32mI (291326) LDR: light intensity: 1685[0m
+[0;32mI (291706) DHT11: Temperature is 26 
+[0m
+[0;32mI (291726) DHT11: Humidity is 6
+[0m
+[0;32mI (292136) BMP180: Pressure 100973 Pa, Altitute 29.35 m, Temperature : 25.2 C[0m
+[0;32mI (292326) LDR: light intensity: 1671[0m
+[0;32mI (293326) LDR: light intensity: 1707[0m
+[0;32mI (293726) DHT11: Temperature is 26 
+[0m
+[0;32mI (293746) DHT11: Humidity is 6
+[0m
+[0;32mI (294326) LDR: light intensity: 1707[0m
+[0;32mI (295206) BMP180: Pressure 100977 Pa, Altitute 29.10 m, Temperature : 25.2 C[0m
+[0;32mI (295326) LDR: light intensity: 1587[0m
+[0;32mI (295746) DHT11: Temperature is 26 
+[0m
+[0;32mI (295766) DHT11: Humidity is 6
+[0m
+[0;32mI (296326) LDR: light intensity: 1564[0m
+[0;32mI (297326) LDR: light intensity: 1561[0m
+[0;32mI (297766) DHT11: Temperature is 26 
+[0m
+[0;32mI (297786) DHT11: Humidity is 6
+[0m
+[0;32mI (298276) BMP180: Pressure 100974 Pa, Altitute 29.43 m, Temperature : 25.2 C[0m
+[0;32mI (298326) LDR: light intensity: 1556[0m
+[0;32mI (299326) LDR: light intensity: 1551[0m
+[0;32mI (299786) DHT11: Temperature is 26 
+[0m
+[0;32mI (299806) DHT11: Humidity is 6
+[0m
+[0;32mI (300326) LDR: light intensity: 1573[0m
+[0;32mI (301326) LDR: light intensity: 1575[0m
+[0;32mI (301346) BMP180: Pressure 100976 Pa, Altitute 29.26 m, Temperature : 25.2 C[0m
+[0;32mI (301806) DHT11: Temperature is 26 
+[0m
+[0;32mI (301826) DHT11: Humidity is 6
+[0m
+[0;32mI (302326) LDR: light intensity: 1557[0m
+[0;32mI (303326) LDR: light intensity: 1575[0m
+[0;32mI (303826) DHT11: Temperature is 26 
+[0m
+[0;32mI (303846) DHT11: Humidity is 6
+[0m
+[0;32mI (304326) LDR: light intensity: 1940[0m
+[0;32mI (304416) BMP180: Pressure 100976 Pa, Altitute 29.26 m, Temperature : 25.1 C[0m
+[0;32mI (305326) LDR: light intensity: 2131[0m
+[0;32mI (305846) DHT11: Temperature is 26 
+[0m
+[0;32mI (305866) DHT11: Humidity is 6
+[0m
+[0;32mI (306326) LDR: light intensity: 890[0m
+[0;32mI (307326) LDR: light intensity: 903[0m
+[0;32mI (307486) BMP180: Pressure 100976 Pa, Altitute 29.35 m, Temperature : 25.1 C[0m
+[0;32mI (307866) DHT11: Temperature is 26 
+[0m
+[0;32mI (307886) DHT11: Humidity is 8
+[0m
+[0;32mI (308326) LDR: light intensity: 906[0m
+[0;32mI (309326) LDR: light intensity: 923[0m
+[0;32mI (309886) DHT11: Temperature is 26 
+[0m
+[0;32mI (309906) DHT11: Humidity is 9
+[0m
+[0;32mI (310326) LDR: light intensity: 907[0m
+[0;32mI (310556) BMP180: Pressure 100976 Pa, Altitute 29.18 m, Temperature : 25.2 C[0m
+[0;32mI (311326) LDR: light intensity: 909[0m
+[0;32mI (311906) DHT11: Temperature is 26 
+[0m
+[0;32mI (311926) DHT11: Humidity is 10
+[0m
+[0;32mI (312326) LDR: light intensity: 903[0m
+[0;32mI (313326) LDR: light intensity: 889[0m
+[0;32mI (313626) BMP180: Pressure 100980 Pa, Altitute 28.51 m, Temperature : 26.5 C[0m
+[0;32mI (313926) DHT11: Temperature is 26 
+[0m
+[0;32mI (313946) DHT11: Humidity is 10
+[0m
+[0;32mI (314326) LDR: light intensity: 887[0m
+[0;32mI (315326) LDR: light intensity: 893[0m
+[0;32mI (315946) DHT11: Temperature is 26 
+[0m
+[0;32mI (315966) DHT11: Humidity is 10
+[0m
+[0;32mI (316326) LDR: light intensity: 901[0m
+[0;32mI (316696) BMP180: Pressure 100985 Pa, Altitute 28.35 m, Temperature : 26.9 C[0m
+[0;32mI (317326) LDR: light intensity: 1183[0m
+[0;32mI (317966) DHT11: Temperature is 26 
+[0m
+[0;32mI (317986) DHT11: Humidity is 10
+[0m
+[0;32mI (318326) LDR: light intensity: 1387[0m
+[0;32mI (319326) LDR: light intensity: 1353[0m
+[0;32mI (319766) BMP180: Pressure 100981 Pa, Altitute 29.26 m, Temperature : 26.1 C[0m
+[0;32mI (319986) DHT11: Temperature is 26 
+[0m
+[0;32mI (320006) DHT11: Humidity is 6
+[0m
+[0;32mI (320326) LDR: light intensity: 1395[0m
+[0;32mI (321326) LDR: light intensity: 1400[0m
+[0;32mI (322006) DHT11: Temperature is 26 
+[0m
+[0;32mI (322026) DHT11: Humidity is 6
+[0m
+[0;32mI (322326) LDR: light intensity: 1395[0m
+[0;32mI (322836) BMP180: Pressure 100971 Pa, Altitute 29.18 m, Temperature : 25.9 C[0m
+[0;32mI (323326) LDR: light intensity: 1381[0m
+[0;32mI (324026) DHT11: Temperature is 26 
+[0m
+[0;32mI (324046) DHT11: Humidity is 6
+[0m
+[0;32mI (324326) LDR: light intensity: 1464[0m
+[0;32mI (325326) LDR: light intensity: 866[0m
+[0;32mI (325906) BMP180: Pressure 100971 Pa, Altitute 29.43 m, Temperature : 25.8 C[0m
+[0;32mI (326046) DHT11: Temperature is 26 
+[0m
+[0;32mI (326066) DHT11: Humidity is 6
+[0m
+[0;32mI (326326) LDR: light intensity: 873[0m
+[0;32mI (327326) LDR: light intensity: 875[0m
+[0;32mI (328066) DHT11: Temperature is 26 
+[0m
+[0;32mI (328086) DHT11: Humidity is 10
+[0m
+[0;32mI (328326) LDR: light intensity: 883[0m
+[0;32mI (328976) BMP180: Pressure 100975 Pa, Altitute 29.43 m, Temperature : 25.7 C[0m
+[0;32mI (329326) LDR: light intensity: 873[0m
+[0;32mI (330086) DHT11: Temperature is 26 
+[0m
+[0;32mI (330106) DHT11: Humidity is 10
+[0m
+[0;32mI (330326) LDR: light intensity: 885[0m
+[0;32mI (331326) LDR: light intensity: 885[0m
+[0;32mI (332046) BMP180: Pressure 100973 Pa, Altitute 29.26 m, Temperature : 25.7 C[0m
+[0;32mI (332106) DHT11: Temperature is 26 
+[0m
+[0;32mI (332126) DHT11: Humidity is 11
+[0m
+[0;32mI (332326) LDR: light intensity: 895[0m
+[0;32mI (333326) LDR: light intensity: 903[0m
+[0;32mI (334126) DHT11: Temperature is 26 
+[0m
+[0;32mI (334146) DHT11: Humidity is 10
+[0m
+[0;32mI (334326) LDR: light intensity: 909[0m
+[0;32mI (335116) BMP180: Pressure 100976 Pa, Altitute 29.51 m, Temperature : 25.7 C[0m
+[0;32mI (335326) LDR: light intensity: 917[0m

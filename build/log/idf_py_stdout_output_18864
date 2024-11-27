@@ -1,0 +1,129 @@
+��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov 27 2024 11:37:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c3d4h ( 50132) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c3fc vaddr=3fc93800 size=02af4h ( 10996) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001eef8 vaddr=40374000 size=01120h (  4384) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1cdc0h (118208) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=0003cde8 vaddr=40375120 size=0e68ch ( 59020) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     Tasks[0m
+[0;32mI (195) app_init: App version:      1[0m
+[0;32mI (199) app_init: Compile time:     Nov 27 2024 11:37:25[0m
+[0;32mI (205) app_init: ELF file SHA256:  087588435...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (220) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (230) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FC96C10 len 00052B00 (330 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (249) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (263) spi_flash: detected chip: gd[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (283) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) LDR: light intensity: 877[0m
+[0;32mI (326) BMP180 I2C Driver: I2C master driver has been installed.[0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (336) BMP180 I2C Driver: BMP180 sensor found at 0x77[0m
+[0;32mI (356) BMP180 I2C Driver: AC1: 7318, AC2: -1172, AC3: -14289, AC4: 34480, AC5: 25794, AC6: 19239[0m
+[0;32mI (356) BMP180 I2C Driver: B1: 6515, B2: 46, MB: -32768, MC: -11786, MD: 2336[0m
+[0;32mI (436) BMP180: Pressure 100983 Pa, Altitute 28.68 m, Temperature : 25.3 C[0m
+[0;32mI (826) DHT11: Temperature is 26 
+[0m
+[0;32mI (846) DHT11: Humidity is 6
+[0m
+[0;32mI (1326) LDR: light intensity: 853[0m
+[0;32mI (1506) BMP180: Pressure 100983 Pa, Altitute 28.68 m, Temperature : 25.3 C[0m
+[0;32mI (1846) DHT11: Temperature is 26 
+[0m
+[0;32mI (1846) DHT11: Humidity is 6
+[0m
+[0;32mI (2326) LDR: light intensity: 867[0m
+[0;32mI (2576) BMP180: Pressure 100980 Pa, Altitute 28.18 m, Temperature : 25.3 C[0m
+[0;32mI (2846) DHT11: Temperature is 26 
+[0m
+[0;32mI (2866) DHT11: Humidity is 6
+[0m
+[0;32mI (3326) LDR: light intensity: 869[0m
+[0;32mI (3646) BMP180: Pressure 100981 Pa, Altitute 28.93 m, Temperature : 25.3 C[0m
+[0;32mI (3866) DHT11: Temperature is 26 
+[0m
+[0;32mI (3866) DHT11: Humidity is 6
+[0m
+[0;32mI (4326) LDR: light intensity: 856[0m
+[0;32mI (4716) BMP180: Pressure 100985 Pa, Altitute 28.35 m, Temperature : 25.3 C[0m
+[0;32mI (4866) DHT11: Temperature is 26 
+[0m
+[0;32mI (4886) DHT11: Humidity is 6
+[0m
+[0;32mI (5326) LDR: light intensity: 863[0m
+[0;32mI (5786) BMP180: Pressure 100987 Pa, Altitute 28.68 m, Temperature : 25.3 C[0m
+[0;32mI (5886) DHT11: Temperature is 26 
+[0m
+[0;32mI (5886) DHT11: Humidity is 6
+[0m
+[0;32mI (6326) LDR: light intensity: 863[0m
+[0;32mI (6856) BMP180: Pressure 100981 Pa, Altitute 28.43 m, Temperature : 25.3 C[0m
+[0;32mI (6886) DHT11: Temperature is 26 
+[0m
+[0;32mI (6906) DHT11: Humidity is 6
+[0m
+[0;32mI (7326) LDR: light intensity: 867[0m
+[0;32mI (7906) DHT11: Temperature is 26 
+[0m
+[0;32mI (7906) DHT11: Humidity is 6
+[0m
+[0;32mI (7926) BMP180: Pressure 100985 Pa, Altitute 28.59 m, Temperature : 25.4 C[0m
+[0;32mI (8326) LDR: light intensity: 860[0m
+[0;32mI (8906) DHT11: Temperature is 26 
+[0m
+[0;32mI (8926) DHT11: Humidity is 6
+[0m
+[0;32mI (8996) BMP180: Pressure 100982 Pa, Altitute 29.01 m, Temperature : 25.4 C[0m
+[0;32mI (9326) LDR: light intensity: 858[0m
+[0;32mI (9926) DHT11: Temperature is 26 
+[0m
+[0;32mI (9926) DHT11: Humidity is 6
+[0m
+[0;32mI (10066) BMP180: Pressure 100978 Pa, Altitute 29.35 m, Temperature : 25.4 C[0m
+[0;32mI (10326) LDR: light intensity: 862[0m
+[0;32mI (10926) DHT11: Temperature is 26 
+[0m
+[0;32mI (10946) DHT11: Humidity is 6
+[0m
+[0;32mI (11136) BMP180: Pressure 100984 Pa, Altitute 28.51 m, Temperature : 25.4 C[0m
+[0;32mI (11326) LDR: light intensity: 871[0m
