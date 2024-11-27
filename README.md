@@ -1,35 +1,19 @@
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C5 | ESP32-C6 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 |
-| ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+# _xTaskCreate_
+FreeRTOS is an efficient, real-time operating system designed for embedded systems and microcontrollers. It is widely used in time-sensitive applications such as robotics, IoT devices, and various electronics. FreeRTOS helps manage tasks that need to execute within strict time limits, ensuring responsiveness and reliability.
 
-# _Sample project_
+For ESP32 chips, FreeRTOS is integrated into the ESP-IDF framework, enabling task management, process switching, and device interaction. It allows multiple tasks to run simultaneously while prioritizing them based on urgency, making it ideal for applications involving sensor data handling, communication, and other time-critical operations.
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+## Circuit Installation 
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+In this project, we will use three sensor such as DHT11 (Digital Sensor), LDR (Aanalog sensor) and BMP180 (I2C communication) by seperate task in different rate.
+![Reference Image](c:\Users\WONG\Pictures\Screenshots\Screenshot 2024-11-27 135124.png)
 
+##Result from terminal
 
+After flashing the code, here's the result:
+![Reference Image](c:\Users\WONG\Pictures\Screenshots\Screenshot 2024-11-27 130815.png)
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
-
-## Example folder contents
-
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+According to the result above:
+- The task of LDR prints the light intensity every one second regularly.
+- The task of DHT11 prints the temperature and humidity at the same time in every two second.
+- The task of BMP180 prints the pressure, altitude and temperature at the same time in three second.
